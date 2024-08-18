@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>qn</title>
+	<style type="text/css">
+		
+		div{
+			
+			border-style: solid;
+			border-color: white white skyblue skyblue;
+			height: 80px;
+			width: 40px;
+			position: absolute;
+			left: 50%;
+			top: 40%;
+		}
+
+		@media(max-width:1200px){
+			
+			div{
+			border-style: solid;
+			border-color: skyblue skyblue white white ;
+			height: 80px;
+			width: 40px;
+			position: absolute;
+			left: 50%;
+			top: 40%;
+			}
+		}
+		@media(max-width:800px){
+			div{
+				border-style: solid;
+				border-color: indianred;
+				border-radius: 50%;
+				width: 70px;
+				height: 70px;
+			}
+		
+			div:hover{
+				width: 0;
+				height: 0;
+				border-radius: 0%;
+				border-left: 50px solid transparent;
+				border-right: 50px solid transparent;
+				border-bottom: 100px solid greenyellow;
+				border-top: none;
+			}
+		}
+	</style>
+</head>
+<body>
+<div id="div1"></div>
+</body>
+</html>
