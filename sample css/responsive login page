@@ -1,0 +1,75 @@
+<!DOCTYPE html>   
+<html>         
+<head>   
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, intial-scale=1.0">
+      <title>CSS</title>
+      <style type="text/css">
+
+            *{
+                  font-family: sans-serif;
+                  box-sizing: border-box;
+            }
+            body{
+                  margin: 0;
+            }
+            #div{
+                  background: linear-gradient(to bottom right,#274046,#e6dada);
+                  height: 150vh;
+            }
+            .divv{
+                  background-color: white;
+                  width: 50vw;
+                  height: 150vh;
+                  position: absolute;
+                  right: 0;
+            }
+            form{
+                  margin-left: 5%;
+                  padding-top: 180px;
+            }
+            @media(max-width:768px){
+                  .divv{
+                        display: flex;
+                        width: 100vw;
+                        background-color: beige;
+                  }
+                  .divvv{
+                        position: fixed;
+                        padding-top: 150px;
+                  }
+                  form{
+                        position: fixed;
+                        width: 100vw;
+                        margin-left: 0;
+                        padding-left: 18%;
+                        padding-top: 60px;
+                        background-color: white;
+                        padding-bottom: 80px;
+                  }
+                  
+                  [input=email],[input=password]
+                  {
+                        width: 10px;
+                  }
+            }
+      </style>  
+</head>   
+<body style="overflow: hidden;">   
+      <div id="div">
+            <div class="divv">
+                  <div class="divvv">
+                  <form>
+                        <h1 style="color: darkred;">Login Form</h1>
+                        <label for="email" style="font-weight: bold;">Email :</label><br>
+                        <input type="email" name="email" style="width:75%;margin-bottom: 2%;margin-top: 1%;"><br>
+                        <label for="pwd" style="font-weight: bold;">Password :</label><br>
+                        <input type="password" name="pwd" style="width:75%;margin-bottom: 2%;margin-top: 1%;"><br>  
+                        <input type="checkbox" name="check"><label style="font-weight: bold;">  Remember Me</label><br>
+                        <input type="submit" name="login" value="Login" style="width:30%;background-color: orangered;font-weight: bold;border: none;border-radius: 3px;width: 75%;height: 23px;font-size: medium;color: white;margin-top: 2%;">              
+                  </form>
+                  </div>
+            </div>
+      </div>
+</body>  
+</html>

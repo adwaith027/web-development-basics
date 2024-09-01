@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>css exam</title>
+	<style type="text/css">
+		table{
+			border-color: black;
+			border-collapse: collapse;
+			background-color: grey;
+			color: white;
+		}
+		
+	</style>
+</head>
+<body>
+	<table border="2">
+		<tr>
+			<th>Id</th>
+			<th>Product Name</th>
+			<th>Product Price</th>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>X</td>
+			<td>750</td>
+		</tr>
+		<tr>
+			<td>02</td>
+			<td>Y</td>
+			<td>450</td>
+		</tr>
+		<tr>
+			<td>03</td>
+			<td>Z</td>
+			<td>550</td>
+		</tr>
+		<tr>
+			<td>04</td>
+			<td>P</td>
+			<td>1050</td>
+		</tr>
+		<tr>
+			<td>05</td>
+			<td>Q</td>
+			<td>250</td>
+		</tr>
+	</table>
+</body>
+</html>
