@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			font-family: system-ui, sans-serif;
+		}
+		body{
+			display: flex;
+			margin: 0px;
+			justify-content: center;
+			background-color: #f0f0f2;
+		}
+		div{
+			width: 43%;
+			background-color: #fdfdff;
+			margin-top: 80px;
+			padding-top:30px;
+			padding-bottom: 45px;
+			padding-left:30px ;
+			padding-right: 45px;
+			border: 2px solid white;
+			border-radius: 8px;
+		}
+		a{
+			text-decoration: none;
+		}
+		a:hover{
+			color: #38488f;
+			text-decoration: none;
+		}
+
+		@media(max-width:700px){
+			div{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Example Domain</h1>
+
+		<p>This domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission.</p>
+
+		<a href="https://www.iana.org/help/example-domains">More information...</a>
+	</div>
+</body>
+</html>
