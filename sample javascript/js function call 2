@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>js</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function result(text1){
+	return text1;
+}
+function result2(text2){
+	return (result("Hello ")+ text2);
+}
+function result3(text3){
+	return (result2("Welcome to ")+ text3);
+}
+console.log(result3("Mashup"));
+</script>
+</body>
+</html>

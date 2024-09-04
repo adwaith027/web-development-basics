@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>js</title>
+</head>
+<body>
+<div id="div" style="height: 250px;width: 250px;"></div>
+<script type="text/javascript">
+	let x=Math.random();
+
+	if (x<0.5) {
+			document.getElementById("div").innerHTML=x;
+			document.getElementById("div").style.backgroundColor="green";
+	} 
+	else{
+			document.getElementById("div").innerHTML=x;
+			document.getElementById("div").style.backgroundColor="yellow";
+	}
+</script>
+
+</body>
+</html>
