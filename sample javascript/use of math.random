@@ -6,7 +6,8 @@
 	<title>js</title>
 </head>
 <body>
-<div id="div" style="height: 250px;width: 250px;"></div>
+<div id="div" style="height: 80px;width: 180px;">
+</div>
 <script type="text/javascript">
 	let x=Math.random();
 
@@ -16,7 +17,7 @@
 	} 
 	else{
 			document.getElementById("div").innerHTML=x;
-			document.getElementById("div").style.backgroundColor="yellow";
+			document.getElementById("div").style.backgroundColor="red";
 	}
 </script>
 
