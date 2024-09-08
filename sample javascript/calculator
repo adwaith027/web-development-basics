@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>calc</title>
+	<style type="text/css">
+		button{
+			width: 35px;
+		}
+	</style>
+</head>
+<body>
+<table border="2" style="border-collapse: collapse;">
+	<tr>
+		<td colspan="3"><input type="text" id="display"></td>
+		<td><button class="num" onclick="clearOne()">C</button></td>
+	</tr>
+	<tr>
+		<td><button class="num" onclick="dis(7)">7</button></td>
+		<td><button class="num" onclick="dis(8)">8</button></td>
+		<td><button class="num" onclick="dis(9)">9</button></td>
+		<td><button class="num" onclick="dis(0)">0</button></td>		
+	</tr>
+	<tr>
+		<td><button class="num" onclick="dis(4)">4</button></td>
+		<td><button class="num" onclick="dis(5)">5</button></td>
+		<td><button class="num" onclick="dis(6)">6</button></td>
+		<td><button class="num" onclick="calculate()">=</button></td>
+
+	</tr>
+	<tr>
+		<td><button class="num" onclick="dis(1)">1</button></td>
+		<td><button class="num" onclick="dis(2)">2</button></td>
+		<td><button class="num" onclick="dis(3)">3</button></td>
+		<td><button class="num" onclick="allClear()">AC</button></td>
+	</tr>
+	<tr>
+		<td><button class="num" onclick="dis('+')">+</button></td>
+		<td><button class="num" onclick="dis('-')">-</button></td>
+		<td><button class="num" onclick="dis('*')">*</button></td>
+		<td><button class="num" onclick="dis('/')">/</button></td>
+	</tr>
+		
+</table>
+<script type="text/javascript">
+	function dis(a){	
+			document.getElementById('display').value+=a;
+	}
+
+	function calculate(){
+		let ip=document.getElementById('display').value;
+		let result=eval(ip);
+		document.getElementById('display').value=result;
+	}
+
+	function allClear(){
+		document.getElementById('display').value="";
+	}
+
+	function clearOne(){
+		let y=document.getElementById('display').value.slice(0,-1);
+		document.getElementById('display').value=y;
+	}
+
+</script>
+</body>
+</html>
