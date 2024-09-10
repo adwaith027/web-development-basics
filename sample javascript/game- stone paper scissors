@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>STP</title>
+	<style type="text/css">
+		button{
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			background-color: lightblue;
+			font-family: sans-serif;
+			font-size: x-large;
+			border: 0;
+			margin-left: 180px;
+		}
+		#container{
+			margin-top: 100px;
+			width: 100%;
+			height: 300px;
+			
+		}
+		h4,h5,h6{
+			font-family: sans-serif;
+			font-size: large;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+	<button value="stone" class="button" onclick="game('stone')">Stone</button>
+	<button value="paper" class="button" onclick="game('paper')">Paper</button>
+	<button value="scissors" class="button" onclick="game('scissors')">Scissors</button>
+	</div>
+	<div style="background-color: lightgrey;width: 100%;height: 250px;border-color: black;border-style: solid;border-radius: 10px;text-align: center;">
+		<h4 id="disp"></h4>
+		<h5 id="result"></h5>
+		<h6 id="uspnts"></h6>
+		<h6 id="syspnts"></h6>
+
+	</div>
+
+	<script type="text/javascript">
+		
+		const options=["stone","paper","scissors"];
+		let userPoints=0;
+		let systemPoints=0;
+		function game(name){
+
+				let x=options[Math.floor(Math.random()*options.length)];
+					document.getElementById('disp').innerHTML=x;
+				
+				if (name==x) {
+					document.getElementById('result').innerHTML='Same';
+					document.getElementById('uspnts').innerHTML='User Points: '+userPoints
+					document.getElementById('syspnts').innerHTML='System Points: '+systemPoints
+					}	 
+				
+				else {
+					
+					if (name=='stone') {
+							if (x=='scissors') {
+								document.getElementById('result').innerHTML="User Wins";
+								userPoints+=1;
+								display();
+								win();
+							} else {
+								document.getElementById('result').innerHTML="System Wins";
+								systemPoints+=1;
+								display();
+								win();
+							}
+					} 
+					else if(name=='paper'){
+							if (x=='stone') {
+								document.getElementById('result').innerHTML="User Wins";
+								userPoints+=1;
+								display();
+								win();
+							} else {
+								document.getElementById('result').innerHTML="System Wins";
+								systemPoints+=1;
+								display();
+								win();
+							}
+					}
+					else{
+						if (x=='paper') {
+							document.getElementById('result').innerHTML="User Wins";
+							userPoints+=1;
+							display();
+							win();
+						} else {
+							document.getElementById('result').innerHTML="System Wins";
+							systemPoints+=1;
+							display();
+							win();
+						}
+					}
+					}
+				}				
+
+		function display(){
+					document.getElementById('uspnts').innerHTML='User Points: '+userPoints;
+					document.getElementById('syspnts').innerHTML='System Points: '+systemPoints;
+					}1
+
+		function win() {
+					if(userPoints==5){
+						alert("User Wins");
+						userPoints=0;
+						systemPoints=0;
+					}
+					else if (systemPoints==5) {
+						alert("System Wins");
+						userPoints=0;
+						systemPoints=0;
+					}
+				}
+
+	</script>
+
+</body>
+</html>
