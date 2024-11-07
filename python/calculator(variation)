@@ -1,0 +1,39 @@
+class Calculator:
+    def __init__(self,us_inp):
+        self.us_inp=us_inp
+
+    def addn(self):
+        c=us_inp.split('+')
+        print(int(int(c[0])+int(c[1])))
+    
+    def subn(self):
+        c=us_inp.split('-')
+        print(int(int(c[0])-int(c[1])))
+
+    def muln(self):
+        c=us_inp.split('*')
+        print(int(int(c[0])*int(c[1])))
+
+    def divn(self):
+        c=us_inp.split('/')
+        print(int(int(c[0])/int(c[1])))
+
+
+us_inp=str(input('enter expression: '))
+
+Operations=Calculator(us_inp)
+
+if '+' in us_inp:
+    k=Operations.addn()
+    print(k)
+elif '-' in us_inp:
+    k=Operations.subn()
+    print(k)
+elif '*' in us_inp:
+    k=Operations.muln()
+    print(k)
+elif '/' in us_inp:
+    k=Operations.divn()
+    print(k)
+else: 
+    print('Error in question')
