@@ -6,7 +6,7 @@ class Microwave:
         self.status=False
 
     def turn_on(self):
-        if self.status:   #it shows if status is true or microwave is already turned on
+        if self.status:   #this shows that status is true or that microwave is already turned on
             print(f'Microwave {self.brand} is already on')
         else:
             self.status=True
@@ -26,10 +26,17 @@ class Microwave:
         else:
             print('Turn your microwave on')
 
-hello=Microwave('bosch','C',8000)
+    # def __mul__(self,other):
+    #     return (f'{self.brand} * {other.brand}')
 
-hello.turn_off()
-hello.runmc(5)
-hello.turn_on()
-hello.runmc(2)
-hello.turn_off()
+mcn1=Microwave('bosch','C',8000)
+
+mcn2=Microwave('LG','C',7500)
+
+# print(mcn1 * mcn2)
+
+mcn1.turn_off()
+mcn1.runmc(5)
+mcn1.turn_on()
+mcn1.runmc(2)
+mcn1.turn_off()
