@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changeColor</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #box{
+            width: 500px;
+            height: 500px;
+            background-color:darkkhaki;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="color()">Change color</button>
+    <div id="box"></div>
+
+    <script>
+
+        var btn=document.querySelector('button');
+        var box=document.getElementById('box');
+
+        function color(){
+            if (box.style.backgroundColor=='darkkhaki') {
+                box.style.backgroundColor='black';
+            } else {
+                box.style.backgroundColor='darkkhaki';
+            }
+        }
+    </script>
+</body>
+</html>
